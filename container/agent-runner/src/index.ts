@@ -514,6 +514,10 @@ async function main(): Promise<void> {
           NANOPILOT_IS_MAIN: containerInput.isMain ? '1' : '0',
         },
       },
+      gmail: {
+        command: 'npx',
+        args: ['-y', '@gongrzhe/server-gmail-autoauth-mcp'],
+      },
     },
     skillDirectories: ['/home/node/.copilot/skills', '/workspace/project/container/skills'],
   };
